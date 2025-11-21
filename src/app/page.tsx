@@ -24,7 +24,7 @@ export default function Home() {
   const activeData = selectType === "file" ? fileImgs : folderImgs;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 pb-48">
       <div className="flex border border-gray-300 justify-center items-center cursor-pointer mb-6">
         <div
           className={"hover:bg-gray-700 w-32 text-center p-2" + (selectType === "file" ? " bg-gray-700" : "")}

@@ -129,7 +129,7 @@ export const FileSelector = ({ data, setData }: FileSelectorProps) => {
             {data.length > 0 && (
                 <div>
                     <h3 className="text-lg font-medium mb-2">목록 ({data.length}개)</h3>
-                    <div className="space-y-2 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
+                    <div className="space-y-2 overflow-y-auto pr-2 custom-scrollbar" style={{ maxHeight: 'calc(100vh - 450px)' }}>
                         {data.map((data, index) => (
                             <div
                                 key={data.id}
