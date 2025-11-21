@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "out",
+    "site": "pdf-converter-18eb5",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
