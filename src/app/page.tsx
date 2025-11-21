@@ -25,16 +25,16 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 pb-48">
-      <div className="flex border border-gray-300 justify-center items-center cursor-pointer mb-6">
+      <div className="flex border border-gray-300 dark:border-gray-600 justify-center items-center cursor-pointer mb-6">
         <div
-          className={"hover:bg-gray-700 w-32 text-center p-2" + (selectType === "file" ? " bg-gray-700" : "")}
+          className={"hover:bg-gray-200 dark:hover:bg-gray-700 w-32 text-center p-2" + (selectType === "file" ? " bg-gray-200 dark:bg-gray-700" : "")}
           onClick={() => setSelectType("file")}>파일선택</div>
         <div
-          className={"hover:bg-gray-700 w-32 text-center p-2" + (selectType === "folder" ? " bg-gray-700" : "")}
+          className={"hover:bg-gray-200 dark:hover:bg-gray-700 w-32 text-center p-2" + (selectType === "folder" ? " bg-gray-200 dark:bg-gray-700" : "")}
           onClick={() => setSelectType("folder")}>폴더선택</div>
         <button
           onClick={() => setIsSettingsOpen(true)}
-          className="hover:bg-gray-700 px-4 py-2 text-center border-l border-gray-300 transition-colors cursor-pointer"
+          className="hover:bg-gray-200 dark:hover:bg-gray-700 px-4 py-2 text-center border-l border-gray-300 dark:border-gray-600 transition-colors cursor-pointer"
         >
           ⚙️
         </button>

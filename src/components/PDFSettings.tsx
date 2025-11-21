@@ -47,7 +47,7 @@ export const PDFSettingsModal = ({ isOpen, onClose, settings, onSettingsChange }
 
                 <div className="space-y-6">
                     <div>
-                        <label className="block text-white text-sm font-medium mb-3">
+                        <label className="block text-gray-900 dark:text-white text-sm font-medium mb-3">
                             용지 크기
                         </label>
                         <div className="grid grid-cols-1 gap-2">
